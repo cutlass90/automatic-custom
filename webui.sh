@@ -165,5 +165,6 @@ else
     printf "\n%s\n" "${delimiter}"
     printf "Launching launch.py..."
     printf "\n%s\n" "${delimiter}"
-    "${python_cmd}" "${LAUNCH_SCRIPT}" "$@"
+    printf "nazar nazar ${python_cmd} \n"
+    "${python_cmd}" "${LAUNCH_SCRIPT}" "--listen" "$@"
 fi
